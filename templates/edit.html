@@ -1,0 +1,11 @@
+<form id="editForm" method="POST">
+    <!-- CSRF Token (jika menggunakan Flask-WTF) -->
+    {{ form.hidden_tag() }}
+    
+    <input type="hidden" id="itemId" name="id">
+    <input type="text" id="itemName" name="name" required>
+    <input type="text" id="itemDescription" name="description" required>
+    <input type="number" id="itemPrice" name="price" required>
+    
+    <button type="submit">Update Produk</button>
+</form>
